@@ -1,0 +1,36 @@
+.mycover {
+	background: transparent url("shower/themes/mozilla/images/bg-blue-2.png") repeat scroll 0% 0% !important;
+}
+
+.myright {
+	margin-top: 4rem;
+	margin-right: 4rem;
+}
+
+.mycenter {
+	display: block;
+	margin: 0 auto;
+}
+
+.center {
+	text-align: center;
+}
+
+.bottom {
+	margin-top: 10rem;
+}
+
+.myimg {
+	max-height: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.minimg {
+	height: 60%;
+	margin-top: -3rem;
+}
+
+.mypanda {
+	margin-top: 3rem;
+}

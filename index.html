@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="it-IT">
+<head>
+	<title>Firefox OS per Utenti e Sviluppatori</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/mozilla/styles/style.css"/>
+
+	<!-- my style -->
+	<link rel="stylesheet" href="my_style.css"/>
+</head>
+<body class="list">
+	<header class="caption">
+        <h1>Firefox OS per Utenti e Sviluppatori</h1>
+		<p>Linux Day - Bergamo 24-10-2015</p>
+	</header>
+	<section class="slide cover mycover" id="Cover"><div>
+        <h2>Firefox OS per Utenti e Sviluppatori</h2>
+		<p>Slides by <a href="http://aro94.altervista.org">Aronne Brivio</a></p>
+		<img src="pictures/cover.png" alt="">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Chi sono</h2>
+		<img src="pictures/aro.jpg" class="right myright" alt="Aro" height="300" width="300">
+		<ol>
+            <li class="next">Studente di Informatica presso l'Università degli Studi di Milano</li>
+            <li class="next">Full Stack Developer</li>
+            <li class="next">Fedorista</li>
+            <li class="next">App Reviewer</li>
+            <li class="next">App Board Curator</li>
+            <li class="next">Mozillian</li>
+            <li class="next">Firefox Student Ambassador</li>
+            <li class="next">Co-Fondatore del Firefox Club Milano</li>
+		</ol>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Cos'è Firefox OS</h2>
+		<img src="pictures/fox.png" class="mycenter" height="230">
+		<p>Firefox OS (<strong>Boot to Gecko</strong>) è un sistema operativo basato su kernel <strong>Linux</strong>,  utilizza standard completamente aperti e il suo codice è completamente open source, anche nelle fasi di sviluppo delle varie versioni</p>
+		<p class="note center"><a href="https://developer.mozilla.org/it/Firefox_OS">https://developer.mozilla.org/it/Firefox_OS</a></p>
+	</div></section>
+
+	<section class="slide blue"><div>
+		<h2 class="center">Screenshot</h2>
+		<img src="pictures/screenshot1.png" class="myimg">
+	</div></section>
+
+	<section class="slide blue"><div>
+		<h2 class="center">Screenshot</h2>
+		<img src="pictures/screenshot2.png" class="myimg">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Idee alla base</h2>
+		<br><br>
+		<img src="pictures/25d_phone.png" class="left">
+		<ul>
+			<li class="next">Sistema prodotto senza scopo di lucro</li>
+			<li class="next">Il Web Mobile è per tutti</li>
+			<li class="next">Sistema fluido e funzionale senza grosse esigenze</li>
+			<li class="next">Standard aperti</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Gonk, Gecko e Gaia</h2>
+		<p>Firefox OS si sviluppa su tre differenti livelli:</p>
+		<ol>
+			<li class="next"><strong>Gonk</strong> - Il livello più basso, Kernel Linux (basato su AOSP) e driver open source</li>
+			<li class="next"><strong>Gecko</strong> - Il motore grafico e la Javascript Virtual Machine</li>
+			<li class="next"><strong>Gaia</strong> - L'interfaccia utente, completamente realizzata in HTML, CSS e Javascript</li>
+		</ol>
+		<p class="note center"><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Platform/Architecture">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Platform/Architecture</a></p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Web App</h2>
+		<p>In Firefox OS si possono ottenere app con le stesse performance di una nativa, perchè? Perchè è nativa!</p>
+		<img src="pictures/webapp.png" class="myimg minimg">
+		<p class="note center"><a href="https://leanpub.com/guidavelocesviluppofirefoxos">Guida veloce allo sviluppo per Firefox OS</a></p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Hosted vs Packaged</h2>
+		<p>Firefox OS supporta due diverse tipologie di Web App: Hosted e Packaged, con alcune differenze...</p>
+		<ul>
+			<li class="next">Privilegi differenti</li>
+			<li class="next">Funzionalità differenti: niente AppCache per le Hosted!</li>
+			<li class="next">Modalità di aggiornamento differenti</li>
+			<li class="next">...</li>
+		<ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Permessi</h2>
+		<p class="note center"><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security</a></p>
+	</div></section>
+
+	<!--section class="slide"><div>
+		<h2>Even Tables</h2>
+		<table>
+		<tr>
+			<th scope="col">Locavore</th>
+			<th>Umami</th>
+			<th>Helvetica</th>
+			<th>Vegan</th>
+		</tr>
+		<tr>
+			<th scope="row">Fingerstache</th>
+			<td>Kale</td>
+			<td>Chips</td>
+			<td>Keytar</td>
+		</tr>
+		<tr>
+			<th scope="row">Sriracha</th>
+			<td>Gluten-free</td>
+			<td>Ennui</td>
+			<td>Keffiyeh</td>
+		</tr>
+		<tr>
+			<th scope="row">Thundercats</th>
+			<td>Jean</td>
+			<td>Shorts</td>
+			<td>Biodiesel</td>
+		</tr>
+		<tr>
+			<th scope="row">Terry</th>
+			<td>Richardson</td>
+			<td>Swag</td>
+			<td>Blog</td>
+		</tr>
+		</table>
+		<p>It’s good to have information organized.</p>
+	</div></section>
+
+	<section class="slide cover"><div>
+		<h2 class="left">Pictures</h2>
+		<img src="pictures/picture.jpg" alt="">
+	</div></section>
+
+	<section class="slide shout gradient-nightly"><div>
+		<h2>You can even shout this way</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Inner Navigation</h2>
+		<ol>
+			<li>Lets you reveal list items one by one</li>
+			<li class="next">To keep some key points</li>
+			<li class="next">In secret from audience</li>
+			<li class="next">But it will work only once</li>
+			<li class="next">Nobody wants to see the same joke twice</li>
+		</ol>
+	</div></section>
+
+	<section class="slide shout" id="SeeMore"><div>
+		<h2><img src="pictures/logo.svg" alt=""> <a href="https://github.com/shower/shower">See more on GitHub</a></h2>
+		<style>
+			#Picture h2 {
+				color:#FFF;
+				}
+			#SeeMore img {
+				width:0.72em;
+				height:0.72em;
+				}
+		</style>
+	</div></section>-->
+
+	<section class="slide"><div>
+        <h2 class="center">Domande?</h2>
+        <figure class="frame place swing mypanda">
+        <img src="pictures/redpanda.jpg" alt="Red panda (Firefox)">
+        </figure>
+        <p class="note center bottom">Presentazione a cura di Aronne Brivio. Sorgente: <a href="">...</a></p>
+    </div></section>
+	<div class="progress"><div></div></div>
+	<script src="shower/scripts.js"></script>
+</body>
+</html>
