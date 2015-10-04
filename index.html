@@ -78,7 +78,7 @@
 
 	<section class="slide"><div>
 		<h2 class="center">Web App</h2>
-		<p>In Firefox OS si possono ottenere app con le stesse performance di una nativa, perchè? Perchè è nativa!</p>
+		<p class="center">In Firefox OS si possono ottenere app con le stesse performance di una nativa, perchè? Perchè è nativa!</p>
 		<img src="pictures/webapp.png" class="myimg minimg">
 		<p class="note center"><a href="https://leanpub.com/guidavelocesviluppofirefoxos">Guida veloce allo sviluppo per Firefox OS</a></p>
 	</div></section>
@@ -87,8 +87,8 @@
 		<h2 class="center">Hosted vs Packaged</h2>
 		<p>Firefox OS supporta due diverse tipologie di Web App: Hosted e Packaged, con alcune differenze...</p>
 		<ul>
-			<li class="next">Privilegi differenti</li>
-			<li class="next">Funzionalità differenti: niente AppCache per le Hosted!</li>
+			<li class="next">Privilegi differenti (Geolocalizzazione, Storage, Sveglia, Radio, Notifiche)</li>
+			<li class="next">Funzionalità differenti (Lettura/scrittura SD, Online/Offline)</li>
 			<li class="next">Modalità di aggiornamento differenti</li>
 			<li class="next">...</li>
 		<ul>
@@ -96,6 +96,60 @@
 
 	<section class="slide"><div>
 		<h2 class="center">Permessi</h2>
+		<p>Su altri sistemi siamo abituati ai permessi di amministrazione. Firefox OS specifica i permessi di ogni app nel suo manifest e se permesso dall'utente verranno eseguiti.</p> 
+		<p>Con Firefox OS i permessi di root servono solo agli sviluppatori per il flash delle ROM e il debug delle applicazioni di sistema e sono attivabili solo in presenza di un kernel compilato con l'opzione abilitata</p>
+		<p class="note center"><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security</a></p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Manifest</h2>
+		<p>Il manifest.webapp è un file JSON contenente le informazioni sull'applicazione</p>
+		<ul>
+			<li class="next">Nome, descrizione, dati sullo sviluppatore e lingue supportate</li>
+			<li class="next">Percorso di lancio (launch_path) dell'applicazione e le icone</li>
+			<li class="next">Orientamento dell'app e supporto al full-screen</li>
+			<li class="next">webActivity</li>
+			<li class="next">Permessi richiesti</li>
+		<ul>
+		<p class="note center"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest">https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest</a></p>
+	</div></section>
+
+	<section class="slide blue"><div>
+		<h2 class="center">Manifest</h2>
+		<img src="pictures/manifest.png" class="myimg">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Boilerplate App</h2>
+		<p>Firefox OS Boilerplate App è uno strumento che permette di provare le principali API di Firefox OS e di capirne il funzionamento.</p>
+		<p class="note center"><a href="https://github.com/robnyman/Firefox-OS-Boilerplate-App">https://github.com/robnyman/Firefox-OS-Boilerplate-App</a></p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">WebIDE</h2>
+		<p>WebIDE è il sostituto di <strong>App Manager</strong>. Come App Manager, permette il <strong>debug delle applicazioni</strong> per Firefox OS usando runtime come i Firefox OS Simulator oppure un dispositivo fisico.</p>
+		<!--p>WebIDE include anche un ambiente di editing che permette di creare e sviluppare applicazioni direttamente dal browser e fornisce due possibili template per applicazioni packaged.</p-->
+		<p>Permette inoltre di connetere i <strong>Firefox Developer Tools</strong> ad altri browser, come Firefox per Android, Chrome per Android e Safari su iOS.</p>
+		<p class="note center"><a href="https://developer.mozilla.org/it/docs/Tools/WebIDE">https://developer.mozilla.org/it/docs/Tools/WebIDE</a></p>
+	</div></section>
+
+	<section class="slide blue"><div>
+		<h2 class="center">WebIDE</h2>
+		<img src="pictures/webide.png" class="myimg">
+	</div></section>
+
+	<section class="slide blue"><div>
+		<h2 class="center">WebIDE</h2>
+		<img src="pictures/webide2.png" class="myimg">
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Sicurezza</h2>
+		<p>Firefox OS è stato sviluppato con l'idea alla base di <strong>preservare la sicurezza dell'utente</strong> e dei suoi dati.</p>
+		<ul>
+			<li class="next">I permessi di qualsiasi app (di sistema e non) sono in chiaro e gestibili completamente dall'utente.</li>
+			<li class="next">Le applicazioni girano sotto sandbox e possono quindi colloquiare con il sistema solo attraverso le API fornite... Niente accesso diretto alla SD!</li>
+		</ul>
 		<p class="note center"><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security</a></p>
 	</div></section>
 
@@ -145,17 +199,6 @@
 		<h2>You can even shout this way</h2>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2>Inner Navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
-	</div></section>
-
 	<section class="slide shout" id="SeeMore"><div>
 		<h2><img src="pictures/logo.svg" alt=""> <a href="https://github.com/shower/shower">See more on GitHub</a></h2>
 		<style>
@@ -174,7 +217,7 @@
         <figure class="frame place swing mypanda">
         <img src="pictures/redpanda.jpg" alt="Red panda (Firefox)">
         </figure>
-        <p class="note center bottom">Presentazione a cura di Aronne Brivio. <a href="http://aroblu94.github.io/Firefox-OS-Presentation/">Sorgente</a></p>
+        <p class="note bottomcenter">Presentazione a cura di Aronne Brivio. <a href="http://aroblu94.github.io/Firefox-OS-Presentation/">Sorgente</a></p>
     </div></section>
 	<div class="progress"><div></div></div>
 	<script src="shower/scripts.js"></script>

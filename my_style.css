@@ -9,7 +9,8 @@
 
 .mycenter {
 	display: block;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .center {
@@ -33,4 +34,9 @@
 
 .mypanda {
 	margin-top: 3rem;
+}
+
+.bottomcenter {
+	margin-top: 30rem !important;
+	text-align: center;
 }
