@@ -1,6 +1,6 @@
 #Firefox OS Presentation
 
-Firefox OS presentation originally written for Linux Day 2015 @ Bergamo (Italy).
+Firefox OS presentation originally written for Linux Day 2015 @ Bergamo (Italy).   
 Watch it [here](http://aroblu94.github.io/Firefox-OS-Presentation/).
 
 ##Notes
