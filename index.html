@@ -12,26 +12,24 @@
 </head>
 <body class="list">
 	<header class="caption">
-        <h1>Firefox OS per Utenti e Sviluppatori</h1>
-		<p>Linux Day - Bergamo 24-10-2015</p>
+        <h1>Firefox OS Lab</h1>
+		<p>WTF @ UNIPV 9-11-2015</p>
 	</header>
 	<section class="slide cover mycover" id="Cover"><div>
-        <h2>Firefox OS per Utenti e Sviluppatori</h2>
-		<p>Slides by <a href="http://aro94.altervista.org">Aronne Brivio</a></p>
+        <h2>Firefox OS Lab</h2>
+		<p>Slides by <a href="http://firefoxmilano.it">Firefox Club Milano</a></p>
 		<img src="pictures/cover.png" alt="">
 	</div></section>
 
 	<section class="slide"><div>
-		<h2 class="center">Chi sono</h2>
+		<h2 class="center">Chi Siamo</h2>
 		<img src="pictures/aro.jpg" class="right myright" alt="Aro" height="300" width="300">
 		<ol>
-            <li class="next">Studente di Informatica presso l'Università degli Studi di Milano</li>
-            <li class="next">Full Stack Developer</li>
-            <li class="next">App Reviewer</li>
-            <li class="next">App Board Curator</li>
-            <li class="next">Mozillian</li>
+						<li class="next">Aronne e Niccolò</li>
+            <li class="next">Studenti dell'Università degli Studi di Milano</li>
+            <li class="next">Volontari Mozilla</li>
             <li class="next">Firefox Student Ambassador</li>
-            <li class="next">Co-Fondatore del Firefox Club Milano</li>
+            <li class="next">Fondatori del Firefox Club Milano</li>
 		</ol>
 	</div></section>
 
@@ -47,23 +45,6 @@
 		<img src="pictures/screenshot1.png" class="myimg">
 	</div></section>
 
-	<section class="slide blue"><div>
-		<h2 class="center">Screenshot</h2>
-		<img src="pictures/screenshot2.png" class="myimg">
-	</div></section>
-
-	<section class="slide"><div>
-		<h2 class="center">Idee alla base</h2>
-		<br><br>
-		<img src="pictures/25d_phone.png" class="left">
-		<ul>
-			<li class="next">Sistema prodotto senza scopo di lucro</li>
-			<li class="next">Il Web Mobile è per tutti</li>
-			<li class="next">Sistema fluido e funzionale senza grosse esigenze</li>
-			<li class="next">Standard aperti</li>
-		</ul>
-	</div></section>
-
 	<section class="slide"><div>
 		<h2 class="center">Gonk, Gecko e Gaia</h2>
 		<p>Firefox OS si sviluppa su tre differenti livelli:</p>
@@ -76,28 +57,22 @@
 	</div></section>
 
 	<section class="slide"><div>
-		<h2 class="center">Web App</h2>
-		<p class="center">In Firefox OS si possono ottenere web app con le stesse performance di una nativa, perchè? Perchè è nativa!</p>
-		<img src="pictures/webapp.png" class="myimg minimg">
+		<h2 class="center">The Tools: la DOC</h2>
 		<p class="note center"><a href="https://leanpub.com/guidavelocesviluppofirefoxos">Guida veloce allo sviluppo per Firefox OS</a></p>
+		<p class="note center"><a href="https://leanpub.com/guidavelocesviluppofirefoxos">Mozilla Developer Network</a></p>
 	</div></section>
 
 	<section class="slide"><div>
-		<h2 class="center">Hosted vs Packaged</h2>
-		<p>Firefox OS supporta due diverse tipologie di Web App: Hosted e Packaged, con alcune differenze...</p>
-		<ul>
-			<li class="next">Privilegi differenti (Geolocalizzazione, Storage, Sveglia, Radio, Notifiche)</li>
-			<li class="next">Funzionalità differenti (Lettura/scrittura SD, Online/Offline)</li>
-			<li class="next">Modalità di aggiornamento differenti</li>
-			<li class="next">...</li>
-		<ul>
+		<h2 class="center">The Tools: WebIDE</h2>
+		<p>WebIDE è il sostituto di <strong>App Manager</strong>. Come App Manager, permette il <strong>debug delle applicazioni</strong> per Firefox OS usando runtime come i Firefox OS Simulator oppure un dispositivo fisico.</p>
+		<!--p>WebIDE include anche un ambiente di editing che permette di creare e sviluppare applicazioni direttamente dal browser e fornisce due possibili template per applicazioni packaged.</p-->
+		<p>Permette inoltre di connettere i <strong>Firefox Developer Tools</strong> ad altri browser, come Firefox per Android, Chrome per Android e Safari su iOS.</p>
+		<p class="note center"><a href="https://developer.mozilla.org/it/docs/Tools/WebIDE">https://developer.mozilla.org/it/docs/Tools/WebIDE</a></p>
 	</div></section>
 
-	<section class="slide"><div>
-		<h2 class="center">Permessi</h2>
-		<p>Su altri sistemi siamo abituati ai permessi di amministrazione. Firefox OS specifica i permessi di ogni app nel suo manifest e se permesso dall'utente verranno eseguiti.</p> 
-		<p>Con Firefox OS i permessi di root servono solo agli sviluppatori per il flash delle ROM e il debug delle applicazioni di sistema e sono attivabili solo in presenza di un kernel compilato con l'opzione abilitata</p>
-		<p class="note center"><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security</a></p>
+	<section class="slide blue"><div>
+		<h2 class="center">WebIDE</h2>
+		<img src="pictures/webide.png" class="myimg">
 	</div></section>
 
 	<section class="slide"><div>
@@ -114,76 +89,29 @@
 	</div></section>
 
 	<section class="slide blue"><div>
-		<h2 class="center">Manifest</h2>
+		<h2 class="center">Manifest - inserire foto del manifest della demo</h2>
 		<img src="pictures/manifest.png" class="myimg">
 	</div></section>
 
-	<section class="slide"><div>
-		<h2 class="center">Boilerplate App</h2>
-		<p>Firefox OS Boilerplate App è uno strumento che permette di provare le principali API di Firefox OS e di capirne il funzionamento.</p>
-		<img src="pictures/boilerplate.png" class="myimg minimg">
-		<p class="note center"><a href="https://github.com/robnyman/Firefox-OS-Boilerplate-App">https://github.com/robnyman/Firefox-OS-Boilerplate-App</a></p>
-	</div></section>
+
+
 
 	<section class="slide"><div>
-		<h2 class="center">WebIDE</h2>
-		<p>WebIDE è il sostituto di <strong>App Manager</strong>. Come App Manager, permette il <strong>debug delle applicazioni</strong> per Firefox OS usando runtime come i Firefox OS Simulator oppure un dispositivo fisico.</p>
-		<!--p>WebIDE include anche un ambiente di editing che permette di creare e sviluppare applicazioni direttamente dal browser e fornisce due possibili template per applicazioni packaged.</p-->
-		<p>Permette inoltre di connettere i <strong>Firefox Developer Tools</strong> ad altri browser, come Firefox per Android, Chrome per Android e Safari su iOS.</p>
-		<p class="note center"><a href="https://developer.mozilla.org/it/docs/Tools/WebIDE">https://developer.mozilla.org/it/docs/Tools/WebIDE</a></p>
-	</div></section>
-
-	<section class="slide blue"><div>
-		<h2 class="center">WebIDE</h2>
-		<img src="pictures/webide.png" class="myimg">
-	</div></section>
-
-	<section class="slide blue"><div>
-		<h2 class="center">WebIDE</h2>
-		<img src="pictures/webide2.png" class="myimg">
-	</div></section>
-
-	<section class="slide"><div>
-		<h2 class="center">Sicurezza</h2>
-		<p>Firefox OS è stato sviluppato con l'idea alla base di <strong>preservare la sicurezza dell'utente</strong> e dei suoi dati.</p>
+		<h2 class="center">Hosted vs Packaged</h2>
+		<p>Firefox OS supporta due diverse tipologie di Web App: Hosted e Packaged, con alcune differenze...</p>
 		<ul>
-			<li class="next">I permessi di qualsiasi app (di sistema e non) sono in chiaro e gestibili completamente dall'utente.</li>
-			<li class="next">Le applicazioni girano sotto sandbox e possono quindi colloquiare con il sistema solo attraverso le API fornite... Niente accesso diretto alla SD!</li>
-		</ul>
+			<li class="next">Privilegi differenti (Geolocalizzazione, Storage, Sveglia, Radio, Notifiche)</li>
+			<li class="next">Funzionalità differenti (Lettura/scrittura SD, Online/Offline)</li>
+			<li class="next">Modalità di aggiornamento differenti</li>
+			<li class="next">...</li>
+		<ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2 class="center">Permessi</h2>
+		<p>Su altri sistemi siamo abituati ai permessi di amministrazione. Firefox OS specifica i permessi di ogni app nel suo manifest e se permesso dall'utente verranno eseguiti.</p>
+		<p>Con Firefox OS i permessi di root servono solo agli sviluppatori per il flash delle ROM e il debug delle applicazioni di sistema e sono attivabili solo in presenza di un kernel compilato con l'opzione abilitata</p>
 		<p class="note center"><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security</a></p>
-	</div></section>
-
-	<!-- FIREFOX OS 2.5 - SPARK -->
-	<section class="slide"><div>
-		<h2 class="center">Firefox OS 2.5</h2>
-		<img src="pictures/ignite.png" class="mycenter" height="230">
-		<p></p>
-		<blockquote>Firefox OS 2.5 will be the most customizable, secure, locally relevant and empowering Firefox OS experience yet.</blockquote>
-		<p></p>
-		<p class="note center"><a href="https://blog.mozilla.org/futurereleases/2015/07/17/what-to-look-forward-to-from-firefox-os/">https://blog.mozilla.org/futurereleases/2015/07/17/what-to-look-forward-to-from-firefox-os/</a></p>
-	</div></section>
-
-	<section class="slide"><div>
-		<h2 class="center">Firefox OS 2.5 - Le novità</h2>
-		<p>Firefox OS 2.5 introduce numerose novità, soprattutto per gli sviluppatori</p>
-		<img src="pictures/spark.png" class="right myright2" alt="Studio" width="520">
-		<!--ul>
-			<li class="next"><strong>Add-on</strong> - Con il supporto agli Add-on ora si può personalizzare sistema e applicazioni</li>
-			<li class="next"><strong>Nuove API</strong> - ...</li>
-			<li class="next"><strong>Visualizza Sorgente</strong> - È possibile visualizzare il sorgente di ogni parte del sistema</li>
-			<li class="next"><strong>Personalizzazione</strong> - È possibile creare il proprio tema personalizzato</li>
-			<li class="next"><strong>Navigazione Privata</strong> - ...</li>
-			<li class="next"><strong>Pin The Web</strong> - Le pagine "pinnate" sono ora separate dalle app</li>
-		</ul-->
-		<ul>
-			<li class="next">Add-on</li>
-			<li class="next">Nuove API</li>
-			<li class="next">Riconoscimento Vocale</li>
-			<li class="next">Visualizza Sorgente</li>
-			<li class="next">Personalizzazione</li>
-			<li class="next">Tracking Protection</li>
-			<li class="next">Pin The Web</li>
-		</ul>
 	</div></section>
 
 	<section class="slide"><div>
