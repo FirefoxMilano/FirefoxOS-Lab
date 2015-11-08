@@ -18,12 +18,12 @@
 	<section class="slide cover mycover" id="Cover"><div>
         <h2>Firefox OS Lab</h2>
 		<p>Slides by <a href="http://firefoxmilano.it">Firefox Club Milano</a></p>
-		<img src="pictures/cover.png" alt="">
+		<img src="pictures/backg.png" alt="">
 	</div></section>
 
 	<section class="slide"><div>
 		<h2 class="center">Chi Siamo</h2>
-		<img src="pictures/aro.jpg" class="right myright" alt="Aro" height="300" width="300">
+		<img src="pictures/fxosamb.png" class="right myright" alt="Aro" height="300" width="300">
 		<ol>
 						<li class="next">Aronne e Niccolò</li>
             <li class="next">Studenti dell'Università degli Studi di Milano</li>
@@ -57,15 +57,16 @@
 	</div></section>
 
 	<section class="slide"><div>
-		<h2 class="center">The Tools: la DOC</h2>
-		<p class="note center"><a href="https://leanpub.com/guidavelocesviluppofirefoxos">Guida veloce allo sviluppo per Firefox OS</a></p>
-		<p class="note center"><a href="https://leanpub.com/guidavelocesviluppofirefoxos">Mozilla Developer Network</a></p>
+		<h2 class="center">Riferimenti e materiali</h2>
+		<p class="note mdn"><a href="https://leanpub.com/guidavelocesviluppofirefoxos"><img height='350px' src='pictures/quick-dev.png'></a>
+		<a href="https://developers.mozilla.org"><img height="300px" src='pictures/mdn.png'></a></p>
+		<a href="https://public.etherpad-mozilla.org/p/fxlab@pavia">Etherpad comune: https://public.etherpad-mozilla.org/p/fxlab@pavia</a>
 	</div></section>
 
 	<section class="slide"><div>
 		<h2 class="center">The Tools: WebIDE</h2>
-		<p>WebIDE è il sostituto di <strong>App Manager</strong>. Come App Manager, permette il <strong>debug delle applicazioni</strong> per Firefox OS usando runtime come i Firefox OS Simulator oppure un dispositivo fisico.</p>
-		<!--p>WebIDE include anche un ambiente di editing che permette di creare e sviluppare applicazioni direttamente dal browser e fornisce due possibili template per applicazioni packaged.</p-->
+		<p>WebIDE permette il <strong>debug delle applicazioni</strong> per Firefox OS usando runtime come i Firefox OS Simulator oppure un dispositivo fisico.
+			WebIDE include anche un ambiente di editing che permette di creare e sviluppare applicazioni direttamente dal browser</p>
 		<p>Permette inoltre di connettere i <strong>Firefox Developer Tools</strong> ad altri browser, come Firefox per Android, Chrome per Android e Safari su iOS.</p>
 		<p class="note center"><a href="https://developer.mozilla.org/it/docs/Tools/WebIDE">https://developer.mozilla.org/it/docs/Tools/WebIDE</a></p>
 	</div></section>
@@ -73,6 +74,15 @@
 	<section class="slide blue"><div>
 		<h2 class="center">WebIDE</h2>
 		<img src="pictures/webide.png" class="myimg">
+	</div></section>
+
+	<section class='slide'><div>
+		<h2 class="center">L'applicazione</h2>
+		<ul>
+			<li class="next">Mostrerà su una mappa la nostra posizione e la posizione degli edifici</li>
+			<li class="next">Mostrerà la posizione di un determinato edificio sulla mappa</li>
+			<li class='next'>Segnalerà qual'è l'edificio più vicino</li>
+			<img class='myimg' src='pictures/sample.png'>
 	</div></section>
 
 	<section class="slide"><div>
@@ -88,30 +98,44 @@
 		<p class="note center"><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest">https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest</a></p>
 	</div></section>
 
-	<section class="slide blue"><div>
-		<h2 class="center">Manifest - inserire foto del manifest della demo</h2>
-		<img src="pictures/manifest.png" class="myimg">
+	<section class="slide"><div>
+		<h2 class="center">Il nostro manifest</h2>
+		<img src="pictures/manifest-minimal.png" class="myimg">
 	</div></section>
 
-
-
-
 	<section class="slide"><div>
-		<h2 class="center">Hosted vs Packaged</h2>
-		<p>Firefox OS supporta due diverse tipologie di Web App: Hosted e Packaged, con alcune differenze...</p>
-		<ul>
-			<li class="next">Privilegi differenti (Geolocalizzazione, Storage, Sveglia, Radio, Notifiche)</li>
-			<li class="next">Funzionalità differenti (Lettura/scrittura SD, Online/Offline)</li>
-			<li class="next">Modalità di aggiornamento differenti</li>
-			<li class="next">...</li>
-		<ul>
+		<h2 class="center">Creare una mappa</h2>
+		<img src="pictures/html.png">
 	</div></section>
 
 	<section class="slide"><div>
 		<h2 class="center">Permessi</h2>
-		<p>Su altri sistemi siamo abituati ai permessi di amministrazione. Firefox OS specifica i permessi di ogni app nel suo manifest e se permesso dall'utente verranno eseguiti.</p>
-		<p>Con Firefox OS i permessi di root servono solo agli sviluppatori per il flash delle ROM e il debug delle applicazioni di sistema e sono attivabili solo in presenza di un kernel compilato con l'opzione abilitata</p>
-		<p class="note center"><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security</a></p>
+		<p>Firefox OS specifica i permessi di ogni app nel suo manifest e se permesso dall'utente verranno eseguiti.
+		<img class='myimg' src="pictures/manifest-geoloc.png">
+		<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Security">MDN - Sicurezza in Firefox OS</a></p>
+	</div></section>
+
+	<section class='slide'><div>
+		<h2 class='center'>Dove sono io?</h2>
+	</br></br>
+		<img src='pictures/geoloc.png' class="myimg">
+	</br></br>
+		<a href="https://developer.mozilla.org/en-US/docs/" class="center" >MDN - Geolocation WebAPI</a>
+	</div></section>
+
+	<section class='slide'><div>
+		<h2 class="center">Mostrare tutti gli edifici</h2>
+		<img src="pictures/manifest.png" class="myimg">
+	</div></section>
+
+	<section class='slide'><div>
+		<h2 class="center">Mostrare tutti gli edifici - JS</h2>
+		<img src="pictures/getBuilds.png" class="myimg">
+	</div></section>
+
+	<section class='slide'><div>
+		<h2 class="center">Cercare l'edificio più vicino</h2>
+		<img src="pictures/distance.png" class="myimg">
 	</div></section>
 
 	<section class="slide"><div>
@@ -119,7 +143,7 @@
         <figure class="frame place swing mypanda">
         <img src="pictures/redpanda.jpg" alt="Red panda (Firefox)">
         </figure>
-        <p class="note bottomcenter">Presentazione a cura di Aronne Brivio. <a href="http://aroblu94.github.io/Firefox-OS-Presentation/">Sorgente</a></p>
+        <p class=" bottomcenter">Presentazione a cura di Niccolò Cantù e Aronne Brivio.</p>
     </div></section>
 	<div class="progress"><div></div></div>
 	<script src="shower/scripts.js"></script>

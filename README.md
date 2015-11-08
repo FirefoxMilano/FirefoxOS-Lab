@@ -2,8 +2,8 @@
 
 A simple Getting started with Developing Open Web Apps, using the UniWAI (```University, Where Am I?```) app as a demo.
 
-- Presentation: Who Are We?
-- Introduction: Firefox OS project and its architecture
+- Presentation: Who Are We?   -  DONE
+- Introduction: Firefox OS project and its architecture    - DONE
 - Our Tools: The MDN network, the quick developing guide and the WebIDE
 - Present the App Sample: UniWAI and it's specifics.
 - The ID document: write a Manifest - LIVE CODING
