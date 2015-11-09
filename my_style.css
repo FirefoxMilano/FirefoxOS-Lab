@@ -70,3 +70,9 @@
 	margin-top: 30rem !important;
 	text-align: center;
 }
+
+.cover .all {
+	min-height: 105% !important;
+	display: block;
+	position: absolute;
+}
